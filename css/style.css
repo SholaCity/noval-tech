@@ -642,215 +642,7 @@ main section {
 }
 
 /*===== services styling... ends ==== */
-/*===== product styling... begins ==== */
 
-
-#product {
-    width: 100%;
-    background-color: var(--bg-dark);
-    display: none;
-    /* flex */
-    flex-flow: column nowrap;
-}
-
-.product-wrap {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.section-head {
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: center;
-}
-
-.section-head p {
-    width: min(500px, 70%);
-    margin: 0.5rem auto;
-}
-
-.row {
-    width: 100%;
-    display: none;
-    flex-flow: row wrap;
-    gap: 1rem;
-    position: relative;
-    justify-content: space-evenly;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 999;
-
-}
-
-.active-page {
-    visibility: visible;
-    display: flex;
-    opacity: 1;
-}
-
-.product-item {
-    display: flex;
-    flex-flow: column nowrap;
-    position: relative;
-    padding: 1rem;
-    flex-basis: 30%;
-    height: 300px;
-    border-radius: var(--radius1000);
-    border: 2px solid #e1e1e1;
-}
-
-/* gallery one */
-.product-img {
-    flex-basis: 70%;
-    background: var(--white);
-    border-radius: var(--radius1000);
-    box-shadow: inset -10px -10px 15px rgba(248, 248, 248, 0.863), inset 10px 10px 15px rgb(221 217 217 / 86%);
-    margin-bottom: 1rem;
-}
-
-/* 
-#row-one .product-img {
-    background: rgb(0, 153, 255);
-}
-
-#row-two .product-img {
-    background: rgb(255, 0, 170);
-}
-
-#row-three .product-img {
-    background: rgb(0, 255, 21);
-}
-
-#row-four .product-img {
-    background: red;
-} */
-/* 
-.product-img.one {
-    background-image: url("../assets/bg.jpg");
-} */
-
-.gallery-img.two {
-    background-image: url("../assets/wine-shop.jpg");
-}
-
-.gallery-img.three {
-    background-image: url("../assets/walkway.jpg");
-}
-
-.gallery-img.four {
-    background-image: url("../assets/parlor2.jpg");
-}
-
-.gallery-img.five {
-    background-image: url("../assets/royal-table.jpg");
-
-}
-
-.gallery-img.six {
-    background-image: url("../assets/img-accesories1.jpg");
-}
-
-
-/* gallery two */
-
-
-.gallery-img.seven {
-    background-image: url("../assets/img-accesories4.jpg");
-}
-
-.gallery-img.eight {
-    background-image: url("../assets/tv-console2.jpg");
-}
-
-.gallery-img.nine {
-    background-image: url("../assets/royal-chair.jpg");
-}
-
-.gallery-img.ten {
-    background-image: url("../assets/wine-shop2.jpg");
-}
-
-.gallery-img.eleven {
-    background-image: url("../assets/img-3.jpg");
-    background-size: 150%;
-}
-
-.gallery-img.twelve {
-    background-image: url("../assets/img-house.jpg");
-}
-
-/* gallery three */
-
-
-.gallery-img.thirteen {
-    background-image: url("../assets/parlor5.jpg");
-}
-
-.gallery-img.fourteen {
-    background-image: url("../assets/tv-console3.jpg");
-}
-
-.gallery-img.fifteen {
-    background-image: url("../assets/parlor3.jpg");
-}
-
-.gallery-img.sixteen {
-    background-image: url("../assets/royal-horse.jpg");
-}
-
-.gallery-img.seventeen {
-    background-image: url("../assets/img-house2.jpg");
-}
-
-.gallery-img.eighteen {
-    background-image: url("../assets/img-5.jpg");
-}
-
-/*  */
-
-
-/* pages */
-.pages {
-    width: fit-content;
-    margin-inline: auto;
-    margin-top: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    background: var(--clr-primary);
-    border-radius: var(--radius1000);
-
-}
-
-.pages div {
-    width: fit-content;
-    background-color: var(--clr-secondary);
-    border-radius: var(--radius1000);
-    border: var(--border300) solid var(--clr-secondary);
-    color: var(--white);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    margin: 5px;
-    cursor: pointer;
-}
-
-#row-one.active-page~.pages div.one,
-#row-two.active-page~.pages div.two,
-#row-three.active-page~.pages div.three,
-#row-four.active-page~.pages div.four {
-    color: var(--black);
-    background-color: var(--white);
-}
-
-.pages div:hover {
-    background-color: var(--black-hover);
-}
-
-/*===== gallery styling... ends ==== */
 /*===== Reviews styling... begins ==== */
 #Reviews {
     background: rgb(80 22 255);
@@ -1206,25 +998,6 @@ footer .container .ft-item ul li {
         text-align: center;
     }
 
-    /* gallery */
-    .row {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        overflow-x: auto;
-        flex-flow: row nowrap;
-        scroll-snap-type: x mandatory;
-    }
-
-
-
-    .product-item {
-        min-width: 50%;
-        height: 250px;
-        scroll-snap-align: start;
-
-    }
-
-
     /* reviews */
     #Reviews .review-wrap {
         justify-content: flex-start;
@@ -1293,15 +1066,6 @@ footer .container .ft-item ul li {
         flex-basis: 200px;
     }
 
-    .product-item {
-        flex-basis: 100%;
-        height: 250px;
-    }
-
-    .pages {
-        justify-content: center;
-    }
-
     /* about us begins */
     #about {
         flex-flow: column nowrap;
@@ -1346,23 +1110,7 @@ footer .container .ft-item ul li {
     }
 
 
-    /* gallery */
-    .row {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        overflow-x: auto;
-        flex-flow: row nowrap;
-        scroll-snap-type: x mandatory;
-    }
 
-
-
-    .product-item {
-        min-width: 50%;
-        height: 250px;
-        scroll-snap-align: start;
-
-    }
 
     /* reviews */
     #Reviews .review-wrap {
@@ -1456,11 +1204,6 @@ footer .container .ft-item ul li {
         overflow-y: scroll;
     }
 
-    /* gallery */
-    .product-item {
-        min-width: 100%;
-        height: 300px;
-    }
 
     /* reviews */
 
@@ -1504,60 +1247,5 @@ footer .container .ft-item ul li {
 
     100% {
         transform: scale(1)
-    }
-
-
-}
-
-@keyframes fadeIn {
-
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes image-changer {
-    0% {
-        background-image: url("../assets/royal-parlour.jpg");
-    }
-
-    18% {
-        background-image: url("../assets/royal-parlour.jpg");
-    }
-
-    20% {
-        background-image: url("../assets/parlor.jpg")
-    }
-
-    38% {
-        background-image: url("../assets/parlor.jpg")
-    }
-
-    40% {
-        background-image: url("../assets/img-houuse2.jpg")
-    }
-
-    58% {
-        background-image: url("../assets/img-houuse2.jpg")
-    }
-
-    60% {
-        background-image: url("../assets/blob5.jpg")
-    }
-
-    78% {
-        background-image: url("../assets/blob5.jpg")
-    }
-
-    80% {
-        background-image: url("../assets/img-house.jpg")
-    }
-
-    100% {
-        background-image: url("../assets/img-house.jpg")
     }
 }
